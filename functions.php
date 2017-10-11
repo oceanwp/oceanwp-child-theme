@@ -25,6 +25,10 @@ function oceanwp_child_enqueue_parent_style() {
 	$version = $theme->get( 'Version' );
 	// Load the stylesheet
     wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'oceanwp-style' ), $version );
+    // If RTL, uncomment this line
+    /*if ( is_rtl() ) {
+		wp_enqueue_style( 'oceanwp-rtl', get_template_directory_uri() . '/rtl.css', array(), $version );
+	}*/
 	
 }
 add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
