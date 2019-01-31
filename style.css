@@ -9,3 +9,7 @@ Version: 1.0
 */
 
 /* Parent stylesheet should be loaded from functions.php not using @import */
+
+body {
+  background-color: white;
+}
