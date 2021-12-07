@@ -1,11 +1,12 @@
 OceanWP Child Theme
 =================
 
-Child Theme for the OceanWP WordPress theme.
+Ready-to-Use Child Theme for the OceanWP free WordPress theme.
 
 ### Usage
-Simply download the zip and upload the zip (oceanwp-child-theme-master.zip) under your WordPress dashboard at Appearance > Themes. Or extract and upload via FTP at wp-content/themes/.
+Download the child theme zip file. Upload the zip (oceanwp-child-theme-master.zip) under your WordPress dashboard, Appearance > Themes.The other method would be to extract files and upload via FTP at wp-content/themes/.
 
 
 ### Renaming
-You can of course rename the zip file so it isn't called oceanwp-child-theme-master.zip (you should do this so it makes more sense) and also change the "Theme Name" at the top of the style.css file.
+You can rename the zip file so it isn't called oceanwp-child-theme-master.zip.
+You can also change the "Theme Name" at the top of the style.css file, as well as the rest of information in the same file. This is called whitelabeling a child theme.
