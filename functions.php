@@ -22,8 +22,15 @@
 function oceanwp_child_enqueue_parent_style() {
 
 	// Dynamically get version number of the parent stylesheet (lets browsers re-cache your stylesheet when you update the theme).
-	$theme   = wp_get_theme( 'OceanWP' );
-	$version = $theme->get( 'Version' );
+
+	// Get the parent theme's directory path.
+	$parent_theme_dir = get_template_directory();
+
+	// Read the parent theme's style.css file.
+	$parent_style = $parent_theme_dir . '/style.css';
+
+	// Get the parent theme's version number.
+	$version = wp_get_theme( basename( $parent_theme_dir ) )->get( 'Version' );
 
 	// Load the stylesheet.
 	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'oceanwp-style' ), $version );
